@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@color/fondo"
+    tools:context="com.borjarnau.tareasemana2.MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/top"
+        android:layout_marginLeft="@dimen/left">
+
+        <ImageView
+            android:id="@+id/imgvPencil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user"
+            android:layout_gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/etNombreCompleto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nombre_completo"
+            android:textColorHint="@color/colorAccent"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@color/escritura_Hint"
+            android:layout_gravity="center_horizontal"
+            android:maxLength="35" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/top"
+        android:layout_marginLeft="@dimen/left">
+
+        <ImageView
+            android:id="@+id/imgvCalendario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/calendar" />
+
+        <TextView
+            android:id="@+id/tvFechNacimient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/FechaNacimiento"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/left"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/tamañoText"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_marginLeft="@dimen/calendarioDerecha">
+
+                    <EditText
+                         android:id="@+id/etDia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="@string/dia"
+                        android:textColorHint="@color/colorAccent"
+                        android:backgroundTint="@color/colorAccent"
+                        android:textColor="@color/escritura_Hint"
+                        android:maxLength="2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" / "
+                        android:textColor="@color/colorAccent"
+                        android:textSize="19dp"/>
+
+                    <EditText
+                       android:id="@+id/etMes"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:inputType="number"
+                       android:hint="@string/mes"
+                       android:textColorHint="@color/colorAccent"
+                       android:backgroundTint="@color/colorAccent"
+                       android:textColor="@color/escritura_Hint"
+                       android:maxLength="2"/>
+
+
+                    <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text=" / "
+                       android:textColor="@color/colorAccent"
+                       android:textSize="19dp"/>
+
+                    <EditText
+                       android:id="@+id/etAño"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:inputType="number"
+                       android:hint="@string/año"
+                       android:textColorHint="@color/colorAccent"
+                       android:backgroundTint="@color/colorAccent"
+                       android:textColor="@color/escritura_Hint"
+                       android:maxLength="4"/>
+
+
+              </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/top"
+        android:layout_marginLeft="@dimen/left">
+
+        <ImageView
+            android:id="@+id/imgvTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/phone_"
+            android:layout_gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/etTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="@string/telefono"
+            android:textColorHint="@color/colorAccent"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@color/escritura_Hint"
+            android:layout_gravity="center_horizontal"
+            android:maxLength="9"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/top"
+        android:layout_marginLeft="@dimen/left">
+
+        <ImageView
+            android:id="@+id/imgvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/email"
+            android:layout_gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email"
+            android:textColorHint="@color/colorAccent"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@color/escritura_Hint"
+            android:layout_gravity="center_horizontal"
+            android:maxLength="40"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/top"
+        android:layout_marginLeft="@dimen/left">
+
+        <ImageView
+            android:id="@+id/imgvPencil2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pencil_tip_48"
+            android:layout_gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/etDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/descripcion"
+            android:textColorHint="@color/colorAccent"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@color/escritura_Hint"
+            android:layout_gravity="center_horizontal"
+            android:maxLength="100" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btButtonSig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_siguiente"
+        android:layout_marginTop="@dimen/botonTop"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorPrimary"/>
+
+
+</LinearLayout>
